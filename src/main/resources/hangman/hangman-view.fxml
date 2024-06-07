@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="hangman.HangmanController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<BorderPane fx:id="container"  prefHeight="546.0" prefWidth="600" style="-fx-background-color: #E7CB9B;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.HangmanController">
+   <center>
+      <AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="610.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="485.0" fitWidth="683.0" layoutX="-45.0" layoutY="-36.0" pickOnBounds="true">
+               <image>
+                  <Image url="@bg.jpg" />
+               </image>
+            </ImageView>
+            <Line fx:id="line5" endX="-100.0" endY="72.19999694824219" layoutX="307.0" layoutY="163.0" startX="-100.0" strokeWidth="4.0" visible="false" />
+            <Line fx:id="line7" endX="-68.80000305175781" endY="35.399993896484375" layoutX="240.0" layoutY="153.0" startX="-33.707115173339844" startY="12.199996948242188" strokeWidth="4.0" visible="false" />
+            <Line fx:id="line6" endX="-81.80000305175781" endY="53.399993896484375" layoutX="317.0" layoutY="146.0" startX="-107.5999984741211" startY="19.600006103515625" strokeWidth="4.0" visible="false" />
+            <Line fx:id="line8" endX="-67.80000305175781" endY="30.399993896484375" layoutX="241.0" layoutY="222.0" startX="-33.707115173339844" startY="12.199996948242188" strokeWidth="4.0" visible="false" />
+            <Line fx:id="line9" endX="-83.80000305175781" endY="58.399993896484375" layoutX="316.0" layoutY="215.0" startX="-107.5999984741211" startY="19.600006103515625" strokeWidth="4.0" visible="false" />
+            <Ellipse fx:id="circleHead" fill="#1f93ff00" layoutX="209.0" layoutY="142.0" opacity="0" radiusX="25.0" radiusY="22.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+            <Line fx:id="line1" endX="20.199996948242188" endY="14.20001220703125" layoutX="136.0" layoutY="392.0" startX="-100.80000305175781" startY="-13.79998779296875" stroke="#590000" strokeDashOffset="10.0" strokeLineCap="ROUND" strokeWidth="10.0" visible="false" />
+            <Line fx:id="line2" endX="-100.00000762939453" endY="-336.79998779296875" layoutX="195.0" layoutY="387.0" startX="-100.0" stroke="#590000" strokeDashOffset="10.0" strokeLineCap="ROUND" strokeWidth="10.0" visible="false" />
+            <Line fx:id="line3" endX="14.199996948242188" endY="34.19999694824219" layoutX="197.0" layoutY="50.0" startX="-100.0" stroke="#590000" strokeDashOffset="10.0" strokeLineCap="ROUND" strokeWidth="10.0" visible="false" />
+            <Line fx:id="line4" endX="-100.0" endY="32.400001525878906" layoutX="311.0" layoutY="87.0" startX="-100.0" stroke="#590000" strokeDashOffset="10.0" strokeLineCap="ROUND" strokeWidth="7.0" visible="false" />
+            <Label fx:id="Lbl" layoutX="292.0" layoutY="-21.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+   </center>
+   <bottom>
+      <ScrollPane onKeyReleased="#onKeyPressed" fx:id="scrollPane" prefHeight="69.0" prefWidth="720.0" vbarPolicy="NEVER">
+         <TextField fx:id="Txt" visible="false"/>
+         <HBox fx:id="HBoxLetterContainer" prefHeight="100.0" prefWidth="710.0" BorderPane.alignment="CENTER" />
+      </ScrollPane>
+   </bottom>
+</BorderPane>
