@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="65.0" prefWidth="27.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.LetterViewController">
+<children>
+    <Line endX="-80.4000015258789" endY="60.09291458129883" layoutX="114.0" layoutY="-10.0" startX="-104.4000015258789" startY="60.09291076660156" stroke="#000000d6" strokeWidth="5.0" />
+    <Label fx:id="Lbl" layoutX="12.0" layoutY="7.0" text="q">
+        <font>
+            <Font size="25.0" />
+        </font>
+    </Label>
+</children>
+</AnchorPane>

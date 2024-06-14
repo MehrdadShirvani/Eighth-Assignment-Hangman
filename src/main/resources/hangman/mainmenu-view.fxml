@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.MainmenuView">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <Button onAction="#BtnPlay" layoutX="189.0" layoutY="55.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="221.0" style="-fx-background-color: tranparent; -fx-border-color: black; -fx-border-radius: 20; -fx-border-width: 3;" text="Play">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button onAction="#BtnLeaderboard" layoutX="190.0" layoutY="271.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="221.0" style="-fx-background-color: tranparent; -fx-border-color: black; -fx-border-radius: 20; -fx-border-width: 3;" text="Leaderboard">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button onAction="#BtnPreviousResults" layoutX="189.0" layoutY="163.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="221.0" style="-fx-background-color: tranparent; -fx-border-color: black; -fx-border-radius: 20; -fx-border-width: 3;" text="Previous Results">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
